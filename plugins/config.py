@@ -13,17 +13,17 @@ class Config(object):
 
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "5859491010:AAGem4C5p9XaqOVL5B3ixbCaug6aCnlODuM")
 
-    API_ID = int(os.environ.get("API_ID", 12345))
+    API_ID = int(os.environ.get("API_ID", "26607105"))
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("API_HASH", "ca6186c6553ffe7db21f8f0b67765337")
 
-    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+    AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "1287792972").split())
 
     BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "").split())
 
     DOWNLOAD_LOCATION = "./DOWNLOADS"
 
-    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "")
+    UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "-1001974135603")
 
     MAX_FILE_SIZE = 4194304000
 
